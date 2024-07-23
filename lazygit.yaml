@@ -1,0 +1,9 @@
+gui:
+  language: zh-CN
+
+git:
+  parseEmoji: true
+
+os:
+# 使用osc52
+  copyToClipboardCmd: printf "\033]52;c;$(printf {{text}} | base64)\a" > /dev/tty
