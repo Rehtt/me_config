@@ -4,6 +4,6 @@
 
 [lazygit](https://github.com/Rehtt/me_config/blob/main/lazygit.yaml)
 
-[lvim](https://github.com/Rehtt/lvim_config/blob/main/config.lua)
+[lvim](https://github.com/Rehtt/lvim_config/blob/master/config.lua)
 
 [p10k](https://github.com/Rehtt/lvim_config/blob/main/.p10k.zsh)
