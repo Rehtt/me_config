@@ -254,15 +254,12 @@ run_container() {
     --ip "$CONTAINER_IP" \
     --dns 1.1.1.1 \
     --dns 1.0.0.1 \
-    --user "$HOST_UID:$HOST_GID" \
     --workdir "$CONTAINER_WORKDIR" \
     --mount "type=bind,source=$MOUNT_POINT,target=$CONTAINER_WORKDIR" \
     --env "HOME=$CONTAINER_WORKDIR/.home" \
     --env "GOPATH=$CONTAINER_WORKDIR/go" \
     --env "GOCACHE=$CONTAINER_WORKDIR/.cache/go-build" \
     --env "GOMODCACHE=$CONTAINER_WORKDIR/.cache/gomod" \
-    --security-opt no-new-privileges:true \
-    --cap-drop ALL \
     "$IMAGE" \
     bash
 }
